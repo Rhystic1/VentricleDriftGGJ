@@ -1,0 +1,45 @@
+{
+    "name": "TryAgain",
+    "maps": [
+        {
+            "name": "TryAgain",
+            "id": "06e7d7ba-cc47-4bc9-b0bd-19a8fc63753a",
+            "actions": [
+                {
+                    "name": "TryAgain",
+                    "type": "Button",
+                    "id": "6e6540e0-0216-4dbe-a7ce-5ce01c53eac3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "489dfb56-3643-4030-a163-a5e9664715ca",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TryAgain",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "23ac3a1c-3915-412b-ac84-49a164f5c7c8",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TryAgain",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
