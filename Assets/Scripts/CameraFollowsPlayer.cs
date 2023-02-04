@@ -8,7 +8,7 @@ public class CameraFollowsPlayer : MonoBehaviour
 
     void FixedUpdate()
     {
-        this.transform.position = new Vector3(followTransform.position.x, followTransform.position.y, this.transform.position.z);
+        this.transform.position = new Vector3(followTransform.position.x, followTransform.position.y, (followTransform.transform.position.z - 4.1f));
 
     }
 }

@@ -43,15 +43,39 @@ public class PlayerMovement : MonoBehaviour
             {
                 this.MoveUp();
             }
+            if (input.actions["MoveRight"].IsInProgress())
+            {
+                this.MoveRight();
+            }
+            if (input.actions["MoveLeft"].IsInProgress())
+            {
+                this.MoveLeft();
+            }
+            if (input.actions["MoveDown"].IsInProgress())
+            {
+                this.MoveDown();
+            }
         }
     }
 
     void MoveForward()
     {
-        player.transform.position = player.transform.TransformPoint(speed, 0, 0);
+        player.transform.position = player.transform.TransformPoint(0, 0, speed);
     }
     void MoveUp()
     {
         player.transform.position = player.transform.TransformPoint(0, speed, 0);
+    }
+    void MoveDown()
+    {
+        player.transform.position = player.transform.TransformPoint(0, -speed, 0);
+    }
+    void MoveLeft()
+    {
+        player.transform.position = player.transform.TransformPoint(-speed, 0, 0);
+    }
+    void MoveRight()
+    {
+        player.transform.position = player.transform.TransformPoint(speed, 0, 0);
     }
 }
