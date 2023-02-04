@@ -9,6 +9,7 @@ public class GameTimer : MonoBehaviour
     public Image fullImage;
     public float currentTime = 60f;
     public float totalTime = 60f;
+    public float timePercentage = 100.0f;
     public bool isGameLostBool = false;
 
     GameObject gameTimer;
@@ -31,12 +32,14 @@ public class GameTimer : MonoBehaviour
         {
             currentTime -= Time.deltaTime;
             fullImage.fillAmount = currentTime / totalTime;
+            timePercentage = (currentTime / totalTime) * 100.0f;
         }
 
         else
         {
             LoseGame loseScript = gameTimer.GetComponent<LoseGame>();
             isGameLostBool = true;
+            timePercentage = 0.0f;
             loseScript.Invoke("TriggerLoss", 0);
         }
     }
