@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8689434642014672986
+--- !u!114 &-8795839638226391121
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,9 +10,113 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Engine Strafe
+  m_Name: event:/music
   m_EditorClassIdentifier: 
-  Path: event:/Engine Strafe
+  Path: event:/music
+  Guid:
+    Data1: -227359538
+    Data2: 1105795661
+    Data3: -1720747352
+    Data4: -1583872634
+  Banks:
+  - {fileID: -2189825881410974521}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -8357820188709796944}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 56000
+--- !u!114 &-8663595235166547822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/engine_constant
+  m_EditorClassIdentifier: 
+  Path: event:/engine_constant
+  Guid:
+    Data1: 676008861
+    Data2: 1138891559
+    Data3: 172668070
+    Data4: 1675608178
+  Banks:
+  - {fileID: -2189825881410974521}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6162358594205830862}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 20820
+--- !u!114 &-8357820188709796944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/BPM
+  m_EditorClassIdentifier: 
+  Name: BPM
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0.5
+  ID:
+    data1: 2237714990
+    data2: 685915343
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-6162358594205830862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/engine_constant/EngineSpeed
+  m_EditorClassIdentifier: 
+  Name: EngineSpeed
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2582865168
+    data2: 1903249579
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-6000367878298951101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/engine_strafe
+  m_EditorClassIdentifier: 
+  Path: event:/engine_strafe
   Guid:
     Data1: -1175605281
     Data2: 1165721204
@@ -24,11 +128,11 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -1910202446797919561}
+  - {fileID: -5003929488958930558}
   MinDistance: 1
   MaxDistance: 20
   Length: 12058
---- !u!114 &-8577044470302998909
+--- !u!114 &-5003929488958930558
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,52 +141,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Engine Constant
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/engine_strafe/Strafe
   m_EditorClassIdentifier: 
-  Path: event:/Engine Constant
-  Guid:
-    Data1: 676008861
-    Data2: 1138891559
-    Data3: 172668070
-    Data4: 1675608178
-  Banks:
-  - {fileID: -2189825881410974521}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 1125687952187138478}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 20820
---- !u!114 &-7454772339084767084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Background
-  m_EditorClassIdentifier: 
-  Path: event:/Background
-  Guid:
-    Data1: 265498908
-    Data2: 1280509281
-    Data3: 1697962412
-    Data4: 992890678
-  Banks:
-  - {fileID: -2189825881410974521}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 90454
+  Name: Strafe
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 732640183
+    data2: 753324309
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-2189825881410974521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,34 +171,10 @@ MonoBehaviour:
   Path: Assets/FMod/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638111234154292262
+  lastModified: 638111313215425517
   FileSizes:
   - Name: Desktop
-    Value: 2320928
-  Exists: 1
---- !u!114 &-1910202446797919561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Engine Strafe/Strafe
-  m_EditorClassIdentifier: 
-  Name: Strafe
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 732640183
-    data2: 753324309
-  Type: 0
-  IsGlobal: 0
-  Labels: []
+    Value: 2320576
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -143,19 +192,19 @@ MonoBehaviour:
   - {fileID: 6748812040121202799}
   - {fileID: -2189825881410974521}
   EditorEvents:
-  - {fileID: -7454772339084767084}
-  - {fileID: 6268270869423464380}
-  - {fileID: -8577044470302998909}
-  - {fileID: 375873868048717978}
-  - {fileID: -8689434642014672986}
+  - {fileID: 3636534362444590602}
+  - {fileID: 288327630489750551}
+  - {fileID: -8663595235166547822}
+  - {fileID: -8795839638226391121}
+  - {fileID: -6000367878298951101}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2189825881410974521}
   StringsBanks:
   - {fileID: 6748812040121202799}
-  cacheTime: 638111234154306046
+  cacheTime: 638111313215446470
   cacheVersion: 131601
---- !u!114 &375873868048717978
+--- !u!114 &288327630489750551
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,85 +214,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music
+  m_Name: event:/engine_start
   m_EditorClassIdentifier: 
-  Path: event:/Music
-  Guid:
-    Data1: -227359538
-    Data2: 1105795661
-    Data3: -1720747352
-    Data4: -1583872634
-  Banks:
-  - {fileID: -2189825881410974521}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 2484826144994582008}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 56000
---- !u!114 &1125687952187138478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Engine Constant/EngineSpeed
-  m_EditorClassIdentifier: 
-  Name: EngineSpeed
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2582865168
-    data2: 1903249579
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &2484826144994582008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/HeartBPM
-  m_EditorClassIdentifier: 
-  Name: HeartBPM
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0.5
-  ID:
-    data1: 2237714990
-    data2: 685915343
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &6268270869423464380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Engine Start
-  m_EditorClassIdentifier: 
-  Path: event:/Engine Start
+  Path: event:/engine_start
   Guid:
     Data1: 96647785
     Data2: 1097696460
@@ -258,6 +231,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7818
+--- !u!114 &3636534362444590602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/background
+  m_EditorClassIdentifier: 
+  Path: event:/background
+  Guid:
+    Data1: 265498908
+    Data2: 1280509281
+    Data3: 1697962412
+    Data4: 992890678
+  Banks:
+  - {fileID: -2189825881410974521}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 90454
 --- !u!114 &6748812040121202799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,8 +273,8 @@ MonoBehaviour:
   Path: Assets/FMod/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638111234154306046
+  lastModified: 638111313215446470
   FileSizes:
   - Name: Desktop
-    Value: 1090
+    Value: 1084
   Exists: 1
