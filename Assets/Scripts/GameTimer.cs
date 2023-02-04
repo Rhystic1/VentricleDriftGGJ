@@ -9,6 +9,7 @@ public class GameTimer : MonoBehaviour
     public Image fullImage;
     public float currentTime = 60f;
     public float totalTime = 60f;
+    public bool isGameLostBool = false;
 
     GameObject gameTimer;
     // Start is called before the first frame update
@@ -16,6 +17,11 @@ public class GameTimer : MonoBehaviour
     {
         gameTimer = GameObject.Find("Timer");
         fullImage = GetComponent<Image>();
+    }
+
+    bool isGameLost()
+    {
+        return isGameLostBool;
     }
 
     // Update is called once per frame
@@ -30,6 +36,7 @@ public class GameTimer : MonoBehaviour
         else
         {
             LoseGame loseScript = gameTimer.GetComponent<LoseGame>();
+            isGameLostBool = true;
             loseScript.Invoke("TriggerLoss", 0);
         }
     }
