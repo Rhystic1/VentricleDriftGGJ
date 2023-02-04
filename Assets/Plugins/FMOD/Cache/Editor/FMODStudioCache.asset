@@ -104,6 +104,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-6138204402490936255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/impact_virus
+  m_EditorClassIdentifier: 
+  Path: event:/impact_virus
+  Guid:
+    Data1: -1534403769
+    Data2: 1133270910
+    Data3: 2013037489
+    Data4: 1363029190
+  Banks:
+  - {fileID: -2189825881410974521}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-6000367878298951101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,6 +183,88 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-4286447487151451974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/radar
+  m_EditorClassIdentifier: 
+  Path: event:/radar
+  Guid:
+    Data1: -1734858533
+    Data2: 1327325393
+    Data3: -404049232
+    Data4: -1984599942
+  Banks:
+  - {fileID: -2189825881410974521}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1812851499521281118}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10157
+--- !u!114 &-2451958255098838569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/pickup_adrenaline
+  m_EditorClassIdentifier: 
+  Path: event:/pickup_adrenaline
+  Guid:
+    Data1: -506720341
+    Data2: 1081670622
+    Data3: 1147086512
+    Data4: 1798459216
+  Banks:
+  - {fileID: -2189825881410974521}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2379569299262939102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/virus_destroyed
+  m_EditorClassIdentifier: 
+  Path: event:/virus_destroyed
+  Guid:
+    Data1: 1773820040
+    Data2: 1155006442
+    Data3: -1252219714
+    Data4: 948559425
+  Banks:
+  - {fileID: -2189825881410974521}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-2189825881410974521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,10 +280,10 @@ MonoBehaviour:
   Path: Assets/FMod/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638111313215425517
+  lastModified: 638111467535176318
   FileSizes:
   - Name: Desktop
-    Value: 2320576
+    Value: 2721216
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -197,12 +306,21 @@ MonoBehaviour:
   - {fileID: -8663595235166547822}
   - {fileID: -8795839638226391121}
   - {fileID: -6000367878298951101}
+  - {fileID: 4059106386795316236}
+  - {fileID: 7307184807335378183}
+  - {fileID: 3523793390885462976}
+  - {fileID: -6138204402490936255}
+  - {fileID: -2379569299262939102}
+  - {fileID: -2451958255098838569}
+  - {fileID: -4286447487151451974}
+  - {fileID: 741133983633482690}
+  - {fileID: 6755033488434645146}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2189825881410974521}
   StringsBanks:
   - {fileID: 6748812040121202799}
-  cacheTime: 638111313215446470
+  cacheTime: 638111467535192033
   cacheVersion: 131601
 --- !u!114 &288327630489750551
 MonoBehaviour:
@@ -230,7 +348,85 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 7818
+  Length: 5418
+--- !u!114 &741133983633482690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/laser_fire
+  m_EditorClassIdentifier: 
+  Path: event:/laser_fire
+  Guid:
+    Data1: 778548252
+    Data2: 1100340067
+    Data3: 205186968
+    Data4: 1636430732
+  Banks:
+  - {fileID: -2189825881410974521}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1144
+--- !u!114 &1812851499521281118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/radar/Proximity
+  m_EditorClassIdentifier: 
+  Name: Proximity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 4173520409
+    data2: 1564304973
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &3523793390885462976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/virus_grow
+  m_EditorClassIdentifier: 
+  Path: event:/virus_grow
+  Guid:
+    Data1: -12087753
+    Data2: 1221955868
+    Data3: -823722615
+    Data4: -2134920730
+  Banks:
+  - {fileID: -2189825881410974521}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4584
 --- !u!114 &3636534362444590602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,6 +454,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 90454
+--- !u!114 &4059106386795316236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/impact_wall
+  m_EditorClassIdentifier: 
+  Path: event:/impact_wall
+  Guid:
+    Data1: 1542980393
+    Data2: 1319944100
+    Data3: -2082005371
+    Data4: 293832599
+  Banks:
+  - {fileID: -2189825881410974521}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1800
 --- !u!114 &6748812040121202799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,8 +496,62 @@ MonoBehaviour:
   Path: Assets/FMod/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638111313215446470
+  lastModified: 638111467535192033
   FileSizes:
   - Name: Desktop
-    Value: 1084
+    Value: 1532
   Exists: 1
+--- !u!114 &6755033488434645146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/laser_impact
+  m_EditorClassIdentifier: 
+  Path: event:/laser_impact
+  Guid:
+    Data1: -1125019287
+    Data2: 1281208250
+    Data3: 146592647
+    Data4: -1948750888
+  Banks:
+  - {fileID: -2189825881410974521}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 700
+--- !u!114 &7307184807335378183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/pickup_vaccine
+  m_EditorClassIdentifier: 
+  Path: event:/pickup_vaccine
+  Guid:
+    Data1: 248633898
+    Data2: 1322586653
+    Data3: 1176989851
+    Data4: 1007295375
+  Banks:
+  - {fileID: -2189825881410974521}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0

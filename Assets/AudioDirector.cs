@@ -8,9 +8,11 @@ public class AudioDirector : MonoBehaviour
     private FMOD.Studio.EventInstance EngineSpeedSound;
     private FMOD.Studio.EventInstance BPMSound;
     private FMOD.Studio.EventInstance StrafeSound;
+    private FMOD.Studio.EventInstance RadarSound;
     public FMODUnity.EventReference EngineSpeedEvent;
     public FMODUnity.EventReference BPMEvent;
     public FMODUnity.EventReference StrafeEvent;
+    public FMODUnity.EventReference RadarEvent;
 
 
 
@@ -23,6 +25,9 @@ public class AudioDirector : MonoBehaviour
     [SerializeField]
     [Range(0f, 1f)]
     private float Strafe;
+    [SerializeField]
+    [Range(0f, 1f)]
+    private float Proximity;
 
     private void Awake()
     {
@@ -36,9 +41,11 @@ public class AudioDirector : MonoBehaviour
         EngineSpeedSound = FMODUnity.RuntimeManager.CreateInstance(EngineSpeedEvent);
         BPMSound = FMODUnity.RuntimeManager.CreateInstance(BPMEvent);
         StrafeSound = FMODUnity.RuntimeManager.CreateInstance(StrafeEvent);
+        RadarSound = FMODUnity.RuntimeManager.CreateInstance(RadarEvent);
         EngineSpeedSound.start();
         BPMSound.start();
         StrafeSound.start();
+        RadarSound.start();
     }
 
     void Update()
@@ -46,6 +53,7 @@ public class AudioDirector : MonoBehaviour
         EngineSpeedSound.setParameterByName("EngineSpeed", EngineSpeed);
         BPMSound.setParameterByName("BPM", BPM);
         StrafeSound.setParameterByName("Strafe", Strafe);
+        RadarSound.setParameterByName("Proximity", Proximity);
     }
 
     public void ChangeEngineSpeed(float speed)
@@ -61,5 +69,9 @@ public class AudioDirector : MonoBehaviour
     public void ChangeStrafeSpeed(float speed)
     {
         Strafe = Mathf.Clamp(speed, 0f, 1f);
+    }
+    public void ChangeRadarSpeed(float speed)
+    {
+        Proximity = Mathf.Clamp(speed, 0f, 1f);
     }
 }

@@ -607,9 +607,17 @@ MonoBehaviour:
       Data3: 770890666
       Data4: 238974295
     Path: event:/engine_strafe
+  RadarEvent:
+    Guid:
+      Data1: -1734858533
+      Data2: 1327325393
+      Data3: -404049232
+      Data4: -1984599942
+    Path: event:/radar
   EngineSpeed: 0
-  BPM: 0
+  BPM: 0.5
   Strafe: 0
+  Proximity: 0
 --- !u!1 &1009240817
 GameObject:
   m_ObjectHideFlags: 0
