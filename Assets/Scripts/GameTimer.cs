@@ -9,7 +9,7 @@ public class GameTimer : MonoBehaviour
     public Image fullImage;
     public float startingTime = 60f;
     public float totalTime = 60f;
-    
+
     // Start is called before the first frame update
     void Start()
     {
