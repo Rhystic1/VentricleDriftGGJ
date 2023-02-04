@@ -33,4 +33,9 @@ public class GameTimer : MonoBehaviour
             loseScript.Invoke("TriggerLoss", 0);
         }
     }
+
+    public void Restoretime(float time = 30)
+    {
+        currentTime += time;
+    }
 }
