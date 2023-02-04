@@ -375,7 +375,7 @@ MonoBehaviour:
   fullImage: {fileID: 0}
   currentTime: 60
   totalTime: 60
-  isGameRunning: {fileID: 0}
+  isGameLostBool: 0
 --- !u!114 &434681606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -769,14 +769,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604860841}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0.025609197, z: -0, w: -0.99967206}
   m_LocalPosition: {x: 477.79, y: 236.4, z: -164.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 362.935, z: 0}
 --- !u!114 &1604860846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -824,10 +824,10 @@ MonoBehaviour:
   posY: 0
   posZ: 0
   speed: 0
+  timer: {fileID: 0}
   input: {fileID: 1604860846}
   player: {fileID: 1604860841}
-  loseText: {fileID: 1762323379}
-  LoseCondition: {fileID: 0}
+  lossCondition: {fileID: 0}
 --- !u!1 &1762323379
 GameObject:
   m_ObjectHideFlags: 0
