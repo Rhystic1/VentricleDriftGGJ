@@ -49,6 +49,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "PitchUpandDown",
+                    "type": "Button",
+                    "id": "6e1b5862-e860-4177-ac57-2879118cc554",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -178,7 +187,7 @@
                     "id": "67c89266-8ffa-4493-b19c-33f085dffa80",
                     "path": "1DAxis",
                     "interactions": "",
-                    "processors": "",
+                    "processors": "Scale(factor=0.2)",
                     "groups": "",
                     "action": "RotatePlayer",
                     "isComposite": true,
@@ -203,6 +212,72 @@
                     "processors": "",
                     "groups": "",
                     "action": "RotatePlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "f181c063-d97a-4c06-a7ac-c411f5bb4b4a",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "Scale(factor=0.5)",
+                    "groups": "",
+                    "action": "PitchUpandDown",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "5ec592f4-68c4-410e-b1ca-4cbf5f408cbe",
+                    "path": "<Gamepad>/rightStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PitchUpandDown",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "e0d22388-3030-45ea-9f5c-e009d72f41e5",
+                    "path": "<Gamepad>/rightStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PitchUpandDown",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis Mouse",
+                    "id": "c2b9d954-d21f-4290-975b-7dc69eeefa78",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "Scale(factor=0.2)",
+                    "groups": "",
+                    "action": "PitchUpandDown",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "eab267d1-28ec-4de4-a85d-7f2bcb084efb",
+                    "path": "<Mouse>/delta/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PitchUpandDown",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "84a6835c-02db-4ec6-b794-2fd84492b723",
+                    "path": "<Mouse>/delta/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PitchUpandDown",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }
