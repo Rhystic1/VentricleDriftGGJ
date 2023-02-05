@@ -10,11 +10,12 @@ public class VirusMiddleManagement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int difficulty = 2;
+        int difficulty = 4;
         unitList = this.gameObject.GetComponentsInChildren<VirusUnit>(true).ToList();
         for (int i = 0; i < difficulty; i++)
         {
-            unitList[Random.Range(0, unitList.Count)].Spawn();
+            if (difficulty == 4) unitList[i].Spawn();
+            else unitList[Random.Range(0, unitList.Count)].Spawn();
         }
     }
 

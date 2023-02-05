@@ -50,7 +50,7 @@ public class GameTimer : MonoBehaviour
             timePercentage = 0.0f;
             loseScript.Invoke("TriggerLoss", 0);
         }
-        if (virusCountdown > 40)
+        if (virusCountdown > 50)
         {
             virusCountdown = 0;
             virusManager.Spawn();
