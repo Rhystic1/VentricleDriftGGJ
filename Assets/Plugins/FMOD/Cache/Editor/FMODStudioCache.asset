@@ -25,9 +25,10 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: -8357820188709796944}
+  - {fileID: 1900850348125392236}
   MinDistance: 1
   MaxDistance: 20
-  Length: 56000
+  Length: 170000
 --- !u!114 &-8663595235166547822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,10 +281,10 @@ MonoBehaviour:
   Path: Assets/FMod/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638111941504755849
+  lastModified: 638111982075970842
   FileSizes:
   - Name: Desktop
-    Value: 2777696
+    Value: 4155616
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -320,7 +321,7 @@ MonoBehaviour:
   - {fileID: -2189825881410974521}
   StringsBanks:
   - {fileID: 6748812040121202799}
-  cacheTime: 638111941504773096
+  cacheTime: 638111982076010179
   cacheVersion: 131601
 --- !u!114 &288327630489750551
 MonoBehaviour:
@@ -396,6 +397,30 @@ MonoBehaviour:
   ID:
     data1: 4173520409
     data2: 1564304973
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &1900850348125392236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/MusicLevel
+  m_EditorClassIdentifier: 
+  Name: MusicLevel
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 829904979
+    data2: 22318108
   Type: 0
   IsGlobal: 0
   Labels: []
@@ -496,10 +521,10 @@ MonoBehaviour:
   Path: Assets/FMod/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638111941504773096
+  lastModified: 638111982076010179
   FileSizes:
   - Name: Desktop
-    Value: 1532
+    Value: 1572
   Exists: 1
 --- !u!114 &6755033488434645146
 MonoBehaviour:

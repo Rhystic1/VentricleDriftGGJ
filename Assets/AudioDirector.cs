@@ -24,6 +24,9 @@ public class AudioDirector : MonoBehaviour
     private float BPM;
     [SerializeField]
     [Range(0f, 1f)]
+    private float MusicLevel;
+    [SerializeField]
+    [Range(0f, 1f)]
     private float Strafe;
     [SerializeField]
     [Range(0f, 1f)]
@@ -52,6 +55,7 @@ public class AudioDirector : MonoBehaviour
     {
         EngineSpeedSound.setParameterByName("EngineSpeed", EngineSpeed);
         BPMSound.setParameterByName("BPM", BPM);
+        BPMSound.setParameterByName("MusicLevel", MusicLevel);
         StrafeSound.setParameterByName("Strafe", Strafe);
         RadarSound.setParameterByName("Proximity", Proximity);
     }
@@ -64,6 +68,11 @@ public class AudioDirector : MonoBehaviour
     public void ChangeBPMSpeed(float speed)
     {
         BPM = Mathf.Clamp(speed, 0f, 1f);
+    }
+
+    public void ChangeMusicLevel(float speed)
+    {
+        MusicLevel = Mathf.Clamp(speed, 0f, 1f);
     }
 
     public void ChangeStrafeSpeed(float speed)

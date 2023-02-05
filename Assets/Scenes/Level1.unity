@@ -617,6 +617,7 @@ MonoBehaviour:
     Path: event:/radar
   EngineSpeed: 0
   BPM: 0.5
+  MusicLevel: 1
   Strafe: 0
   Proximity: 0
 --- !u!114 &821169028
