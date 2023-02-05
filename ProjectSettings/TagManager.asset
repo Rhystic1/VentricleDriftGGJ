@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - LoseCondition
+  - EndWalls
   layers:
   - Default
   - TransparentFX
