@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.009237059, g: 0.010192652, b: 0.01152874, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -784,8 +784,8 @@ RectTransform:
   m_GameObject: {fileID: 434681603}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -61.6}
-  m_LocalScale: {x: 1, y: 0.14094491, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 0.28188983, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 177781672}
   m_RootOrder: 0
@@ -1009,8 +1009,8 @@ GameObject:
   m_Component:
   - component: {fileID: 681041990}
   - component: {fileID: 681041989}
-  - component: {fileID: 681041988}
   - component: {fileID: 681041991}
+  - component: {fileID: 681041992}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1018,14 +1018,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &681041988
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 681041987}
-  m_Enabled: 1
 --- !u!20 &681041989
 Camera:
   m_ObjectHideFlags: 0
@@ -1098,6 +1090,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followTransform: {fileID: 1604860845}
   yRotation: 0
+--- !u!114 &681041992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681041987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1001 &719151304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1960,6 +1965,8 @@ GameObject:
   - component: {fileID: 1009240820}
   - component: {fileID: 1009240819}
   - component: {fileID: 1009240821}
+  - component: {fileID: 1009240823}
+  - component: {fileID: 1009240822}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -2027,6 +2034,63 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+--- !u!114 &1009240822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009240817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf6027aacbfb7946b6e7b46837be1ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EngineSpeedEvent:
+    Guid:
+      Data1: 676008861
+      Data2: 1138891559
+      Data3: 172668070
+      Data4: 1675608178
+    Path: event:/engine_constant
+  BPMEvent:
+    Guid:
+      Data1: -227359538
+      Data2: 1105795661
+      Data3: -1720747352
+      Data4: -1583872634
+    Path: event:/music
+  StrafeEvent:
+    Guid:
+      Data1: -1175605281
+      Data2: 1165721204
+      Data3: 770890666
+      Data4: 238974295
+    Path: event:/engine_strafe
+  RadarEvent:
+    Guid:
+      Data1: -1734858533
+      Data2: 1327325393
+      Data3: -404049232
+      Data4: -1984599942
+    Path: event:/radar
+  EngineSpeed: 0
+  BPM: 0
+  MusicLevel: 0
+  Strafe: 0
+  Proximity: 0
+--- !u!114 &1009240823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009240817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f27ef9bc4637cd84f9c540376140808d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1034903244
 GameObject:
   m_ObjectHideFlags: 0
@@ -2581,15 +2645,15 @@ RectTransform:
   m_GameObject: {fileID: 1583969071}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.64, y: 0.78, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.94, y: 1.145625, z: 1.46875}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 177781672}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -150, y: -150}
+  m_AnchoredPosition: {x: -150, y: -193}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1583969073
