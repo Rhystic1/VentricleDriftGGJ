@@ -1,30 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = System.Random;
 
 public class VirusMiddleManagement : MonoBehaviour
 {
-    public VirusUnit virusUnitPreFab;
-    public List<VirusUnit> unitList;
+    public List<int> unitList;
     float spawnTimer;
     // Start is called before the first frame update
     void Start()
     {
-        spawnTimer = 50;
         int difficulty = 2;
-        unitList = new List<VirusUnit>();
+        unitList = new List<int>();
         for (int i = 0; i < difficulty; i++)
         {
-            unitList.Add(Instantiate(virusUnitPreFab, transform));
+            Spawn();
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (spawnTimer > 0)
-        { 
-            
+        for (int i = 0; i < 4; i++)
+        {
+            string name = string.Format("Virus{0}", i);
+            if (unitList.Contains(i) && !GameObject.Find(name).activeSelf)
+            {
+                unitList.Remove(i);
+            }
         }
+    }
+
+    public void Spawn()
+    {
+        Random rnd = new Random();
+        int virusIndex = -1;
+        while (virusIndex != -1 && !unitList.Contains(virusIndex) && unitList.Count < 4)
+        {
+            virusIndex = rnd.Next(0, 4);
+        }
+        unitList.Add(virusIndex);
     }
 }
