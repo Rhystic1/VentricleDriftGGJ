@@ -61,8 +61,12 @@ public class PlayerMovement : MonoBehaviour
             {
                 this.MoveDown();
             }
+            
             float rotationY = input.actions["RotatePlayer"].ReadValue<float>();
             this.RotatePlayer(rotationY);
+
+            float rotationX = input.actions["PitchUpandDown"].ReadValue<float>();
+            this.PitchUpandDown(rotationX);
         }
     }
     private void OnCollisionEnter(Collision collision)
@@ -124,6 +128,12 @@ public class PlayerMovement : MonoBehaviour
     {
         Quaternion rotation = transform.rotation;
         rotation *= Quaternion.Euler(0,rotationY * RotationSpeed,0);
+        transform.rotation = rotation;
+    }
+    void PitchUpandDown (float rotationX)
+    {
+        Quaternion rotation = transform.rotation;
+        rotation *= Quaternion.Euler(rotationX * RotationSpeed, 0, 0);
         transform.rotation = rotation;
     }
 }

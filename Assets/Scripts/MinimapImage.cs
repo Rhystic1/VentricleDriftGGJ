@@ -25,7 +25,7 @@ public class MinimapImage : MonoBehaviour
         noHealth = Resources.Load<Sprite>("MiniMapNoHealth");
 
         gameTimer = GameObject.Find("Timer").GetComponent<GameTimer>();
-        miniMap = GameObject.Find("Minimap").GetComponent<Image>();
+        miniMap = GameObject.Find("Image").GetComponent<Image>();
     }
 
     // Update is called once per frame
