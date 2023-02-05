@@ -27,8 +27,9 @@ public class VirusUnit : MonoBehaviour
         }
     }
 
-    void spawn()
+    public void Spawn()
     {
+        Debug.Log("Spawned");
         this.gameObject.SetActive(true);
     }
 

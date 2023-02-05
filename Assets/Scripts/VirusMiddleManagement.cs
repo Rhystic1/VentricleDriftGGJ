@@ -34,11 +34,16 @@ public class VirusMiddleManagement : MonoBehaviour
     public void Spawn()
     {
         Random rnd = new Random();
-        int virusIndex = -1;
-        while (virusIndex != -1 && !unitList.Contains(virusIndex) && unitList.Count < 4)
+        int virusIndex = rnd.Next(0, 4);
+        while (unitList.Contains(virusIndex) && unitList.Count < 4)
         {
             virusIndex = rnd.Next(0, 4);
         }
+        string name = string.Format("Virus{0}", virusIndex);
+        Debug.Log("spawning");
+        Debug.Log(name);
+        VirusUnit virus = GameObject.Find(name).GetComponent<VirusUnit>();
+        virus.Spawn();
         unitList.Add(virusIndex);
     }
 }
