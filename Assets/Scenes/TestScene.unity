@@ -362,6 +362,88 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attenuationObject: {fileID: 0}
+--- !u!1 &919132149049319666 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4951191803729370607, guid: 7b1ede42d51503340b4065676ecd28bf, type: 3}
+  m_PrefabInstance: {fileID: 5221716404124040477}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &919132149049319667
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149049319666}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 6082320db5e543e41a068dff6a018e59, type: 3}
+  m_Controller: {fileID: 9100000, guid: e5db9d5c691d5484d9e53fb49f84b3c9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!1001 &5221716404124040477
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4951191803729370607, guid: 7b1ede42d51503340b4065676ecd28bf, type: 3}
+      propertyPath: m_Name
+      value: Virus
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764038088194852693, guid: 7b1ede42d51503340b4065676ecd28bf, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764038088194852693, guid: 7b1ede42d51503340b4065676ecd28bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764038088194852693, guid: 7b1ede42d51503340b4065676ecd28bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764038088194852693, guid: 7b1ede42d51503340b4065676ecd28bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764038088194852693, guid: 7b1ede42d51503340b4065676ecd28bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764038088194852693, guid: 7b1ede42d51503340b4065676ecd28bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764038088194852693, guid: 7b1ede42d51503340b4065676ecd28bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764038088194852693, guid: 7b1ede42d51503340b4065676ecd28bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764038088194852693, guid: 7b1ede42d51503340b4065676ecd28bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764038088194852693, guid: 7b1ede42d51503340b4065676ecd28bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764038088194852693, guid: 7b1ede42d51503340b4065676ecd28bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b1ede42d51503340b4065676ecd28bf, type: 3}
 --- !u!1001 &5561025448233112456
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -372,6 +454,10 @@ PrefabInstance:
     - target: {fileID: 3311592488445675745, guid: 67ad7b1b125d4ab4db8dcafed310fea6, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311592488445675745, guid: 67ad7b1b125d4ab4db8dcafed310fea6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6782883764936303973, guid: 67ad7b1b125d4ab4db8dcafed310fea6, type: 3}
       propertyPath: m_RootOrder
