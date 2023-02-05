@@ -10,9 +10,9 @@ public class EasterEgg : MonoBehaviour
 
     void Start()
     {
-        float positionX = 11.5f;
-        float positionY = 24.2f;
-        float positionZ = 20.9f;
+        float positionX = 12.59f;
+        float positionY = 22.87f;
+        float positionZ = 18.85f;
 
         GameObject camera = GameObject.Find("Camera");
         camera.transform.position = new Vector3(positionX, positionY, positionZ);
