@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.009237059, g: 0.010192652, b: 0.01152874, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -410,6 +410,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
       propertyPath: m_Name
       value: BloodVesselModel
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1221976254078804567, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1435,7 +1439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1119838207
 MeshCollider:
   m_ObjectHideFlags: 0
