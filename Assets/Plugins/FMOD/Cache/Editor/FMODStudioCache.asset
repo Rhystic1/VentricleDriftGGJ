@@ -118,10 +118,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/impact_virus
   Guid:
-    Data1: -1534403769
-    Data2: 1133270910
-    Data3: 2013037489
-    Data4: 1363029190
+    Data1: 2085089129
+    Data2: 1122138448
+    Data3: -1660524402
+    Data4: -1724414694
   Banks:
   - {fileID: -2189825881410974521}
   IsStream: 0
@@ -130,7 +130,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 4198
 --- !u!114 &-6000367878298951101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,10 +280,10 @@ MonoBehaviour:
   Path: Assets/FMod/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638111488994683799
+  lastModified: 638111941504755849
   FileSizes:
   - Name: Desktop
-    Value: 2693120
+    Value: 2777696
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -320,7 +320,7 @@ MonoBehaviour:
   - {fileID: -2189825881410974521}
   StringsBanks:
   - {fileID: 6748812040121202799}
-  cacheTime: 638111488994703944
+  cacheTime: 638111941504773096
   cacheVersion: 131601
 --- !u!114 &288327630489750551
 MonoBehaviour:
@@ -496,7 +496,7 @@ MonoBehaviour:
   Path: Assets/FMod/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638111488994703944
+  lastModified: 638111941504773096
   FileSizes:
   - Name: Desktop
     Value: 1532
