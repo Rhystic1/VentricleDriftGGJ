@@ -13,6 +13,10 @@ public class PlayerMovement : MonoBehaviour
     public float posY;
     public float posZ;
     public float speed;
+    public float RotationSpeed = 2f;
+    public float currentSpeed = 0.05f;
+    public Rigidbody rb;
+    public Vector3 impulseForce;
 
     public GameObject timer;
     public PlayerInput input;
@@ -24,11 +28,13 @@ public class PlayerMovement : MonoBehaviour
         posX = player.transform.position.x;
         posY = player.transform.position.y;
         posZ = player.transform.position.z;
-        speed = 0.01f;
+        currentSpeed = 0.05f;
+
+        rb = GetComponent<Rigidbody>();
+        impulseForce = new Vector3(0f, 0f, 0f);
 
         timer = GameObject.Find("Timer");
         lossCondition = timer.GetComponent<GameTimer>();
-        player = GameObject.FindWithTag("Player");
         input = GameObject.Find("Player").GetComponent<PlayerInput>();
     }
 
@@ -55,27 +61,69 @@ public class PlayerMovement : MonoBehaviour
             {
                 this.MoveDown();
             }
+            float rotationY = input.actions["RotatePlayer"].ReadValue<float>();
+            this.RotatePlayer(rotationY);
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        currentSpeed -= 0.03f;
+        if (currentSpeed <= 0f)
+        {
+            currentSpeed = 0f;
+        }
+
+        if (currentSpeed == 0f)
+        {
+            return;
+        }
+
+        impulseForce = -collision.impulse / Time.fixedDeltaTime;
+        rb.AddForce(impulseForce, ForceMode.Impulse);
+        Vector3 closestPoint = collision.collider.ClosestPoint(transform.position);
+        Vector3 direction = (transform.position - closestPoint).normalized;
+        transform.position = closestPoint + direction * 0.5f;
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (currentSpeed != speed)
+        {
+            currentSpeed += 0.02f;
         }
     }
 
     void MoveForward()
     {
-        player.transform.position = player.transform.TransformPoint(0, 0, speed);
+        if (currentSpeed == 0f)
+        {
+            transform.position = transform.TransformPoint(0, 0, speed);
+        }
+        currentSpeed = Mathf.Lerp(currentSpeed, speed, Time.deltaTime);
+        transform.position = transform.TransformPoint(0, 0, currentSpeed);
     }
+
     void MoveUp()
     {
-        player.transform.position = player.transform.TransformPoint(0, speed, 0);
+        transform.position = transform.TransformPoint(0, currentSpeed, 0);
     }
     void MoveDown()
     {
-        player.transform.position = player.transform.TransformPoint(0, -speed, 0);
+        transform.position = transform.TransformPoint(0, -currentSpeed, 0);
     }
     void MoveLeft()
     {
-        player.transform.position = player.transform.TransformPoint(-speed, 0, 0);
+        transform.position = transform.TransformPoint(-currentSpeed, 0, 0);
     }
     void MoveRight()
     {
-        player.transform.position = player.transform.TransformPoint(speed, 0, 0);
+        transform.position = transform.TransformPoint(currentSpeed, 0, 0);
+ 
+    }
+    void RotatePlayer(float rotationY)
+    {
+        Quaternion rotation = transform.rotation;
+        rotation *= Quaternion.Euler(0,rotationY * RotationSpeed,0);
+        transform.rotation = rotation;
     }
 }
