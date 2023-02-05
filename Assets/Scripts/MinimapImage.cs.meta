@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 70fa431037598be43bc6f3cc6e64bf5a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gameTimer: {instanceID: 0}
+  - miniMap: {instanceID: 0}
+  - fullHealth: {fileID: 21300000, guid: 676f75e4d6ef1ee45a29379c4e65a4a1, type: 3}
+  - highHealth: {fileID: 21300000, guid: 7942d25894a3d3b4687675c89ceb8d60, type: 3}
+  - midHealth: {fileID: 21300000, guid: 436d6bfad1fe417439fab7efb3c3b269, type: 3}
+  - lowHealth: {fileID: 21300000, guid: 4041bbc16f0644e48aaaca1caec4454e, type: 3}
+  - noHealth: {fileID: 21300000, guid: 4692a4ab74228f543928640a5f3e6e8a, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
