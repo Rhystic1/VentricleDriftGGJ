@@ -21,6 +21,7 @@ public class VirusUnit : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("Collision detected!");
         if (collision.gameObject.name == "Player")
         {
             OnDeath();
@@ -35,6 +36,7 @@ public class VirusUnit : MonoBehaviour
 
     void OnDeath()
     {
+        Debug.Log("On Death triggered");
         timer.Restoretime(20);
         this.gameObject.SetActive(false);
     }

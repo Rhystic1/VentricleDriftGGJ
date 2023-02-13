@@ -6,31 +6,27 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    Vector3 movement;
 
     [SerializeField]
     PlayerMovement m_PlayerMovement;
-    public float posX;
-    public float posY;
-    public float posZ;
-    public float speed;
-    public float RotationSpeed = 2f;
-    public float currentSpeed = 0.05f;
-    public Rigidbody rb;
+    CharacterController controller;
+    public float speed = 9f;
+    public float lateralSpeed = 15f;
+    public float rotationSpeed = 2f;
+    public float pitchSpeed = 124f;
+    public float gravityScale = 0f;
+
     public Vector3 impulseForce;
 
     public GameObject timer;
     public PlayerInput input;
     public GameObject player;
     public GameTimer lossCondition;
-    // Start is called before the first frame update
     void Start()
     {
-        posX = player.transform.position.x;
-        posY = player.transform.position.y;
-        posZ = player.transform.position.z;
-        currentSpeed = 0.05f;
+        controller = GetComponent<CharacterController>();
 
-        rb = GetComponent<Rigidbody>();
         impulseForce = new Vector3(0f, 0f, 0f);
 
         timer = GameObject.Find("Timer");
@@ -38,9 +34,9 @@ public class PlayerMovement : MonoBehaviour
         input = GameObject.Find("Player").GetComponent<PlayerInput>();
     }
 
-    // Update is called once per frame
     void Update()
     {
+        movement = Vector3.zero;
         if (lossCondition.isGameLostBool == false)
         {
             this.MoveForward();
@@ -61,79 +57,86 @@ public class PlayerMovement : MonoBehaviour
             {
                 this.MoveDown();
             }
-            
-            float rotationY = input.actions["RotatePlayer"].ReadValue<float>();
-            this.RotatePlayer(rotationY);
+            if (input.actions["PitchLeft"].IsInProgress())
+            {
+                this.PitchLeft();
+            }
+            if (input.actions["PitchRight"].IsInProgress())
+            {
+                this.PitchRight();
+            }
+            if (input.actions["PitchUp"].IsInProgress())
+            {
+                this.PitchUp();
+            }
+            if (input.actions["PitchDown"].IsInProgress())
+            {
+                this.PitchDown();
+            }
 
-            float rotationX = input.actions["PitchUpandDown"].ReadValue<float>();
-            this.PitchUpandDown(rotationX);
-        }
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        currentSpeed -= 0.03f;
-        if (currentSpeed <= 0f)
-        {
-            currentSpeed = 0f;
-        }
-
-        if (currentSpeed == 0f)
-        {
-            return;
-        }
-
-        impulseForce = -collision.impulse / Time.fixedDeltaTime;
-        rb.AddForce(impulseForce, ForceMode.Impulse);
-        Vector3 closestPoint = collision.collider.ClosestPoint(transform.position);
-        Vector3 direction = (transform.position - closestPoint).normalized;
-        transform.position = closestPoint + direction * 0.5f;
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        if (currentSpeed != speed)
-        {
-            currentSpeed += 0.02f;
+            movement += Physics.gravity * gravityScale;
+            controller.Move(movement * Time.deltaTime);
         }
     }
 
     void MoveForward()
     {
-        if (currentSpeed == 0f)
-        {
-            transform.position = transform.TransformPoint(0, 0, speed);
-        }
-        currentSpeed = Mathf.Lerp(currentSpeed, speed, Time.deltaTime);
-        transform.position = transform.TransformPoint(0, 0, currentSpeed);
+        Vector3 moveDirectionForward = transform.forward * speed;
+        movement += moveDirectionForward;
+    }
+
+    void MoveLeft()
+    {
+        Vector3 moveDirectionLeft = -transform.right * lateralSpeed;
+        movement += moveDirectionLeft;
+    }
+
+    void MoveRight()
+    {
+        Vector3 moveDirectionRight = transform.right * lateralSpeed;
+        movement += moveDirectionRight;
     }
 
     void MoveUp()
     {
-        transform.position = transform.TransformPoint(0, currentSpeed, 0);
+        Vector3 moveDirectionUp = transform.up * lateralSpeed;
+        movement += moveDirectionUp;
     }
+
     void MoveDown()
     {
-        transform.position = transform.TransformPoint(0, -currentSpeed, 0);
+        Vector3 moveDirectionDown = -transform.up * lateralSpeed;
+        movement += moveDirectionDown;
     }
-    void MoveLeft()
+
+    void PitchLeft()
     {
-        transform.position = transform.TransformPoint(-currentSpeed, 0, 0);
+        Vector3 targetDirection = -transform.right;
+        Quaternion targetRotation = Quaternion.LookRotation(targetDirection);
+        Quaternion currentRotation = transform.rotation;
+        Quaternion smoothRotation = Quaternion.Slerp(currentRotation, targetRotation, rotationSpeed * Time.deltaTime);
+        transform.rotation = smoothRotation;
     }
-    void MoveRight()
+
+    void PitchRight()
     {
-        transform.position = transform.TransformPoint(currentSpeed, 0, 0);
- 
+        Vector3 targetDirection = transform.right;
+        Quaternion targetRotation = Quaternion.LookRotation(targetDirection);
+        Quaternion currentRotation = transform.rotation;
+        Quaternion smoothRotation = Quaternion.Slerp(currentRotation, targetRotation, rotationSpeed * Time.deltaTime);
+        transform.rotation = smoothRotation;
     }
-    void RotatePlayer(float rotationY)
+
+    void PitchUp()
     {
-        Quaternion rotation = transform.rotation;
-        rotation *= Quaternion.Euler(0,rotationY * RotationSpeed,0);
-        transform.rotation = rotation;
+        Vector3 rotation = new Vector3(-pitchSpeed, 0, 0);
+        transform.localRotation *= Quaternion.Euler(rotation * Time.deltaTime);
     }
-    void PitchUpandDown (float rotationX)
+
+    void PitchDown()
     {
-        Quaternion rotation = transform.rotation;
-        rotation *= Quaternion.Euler(rotationX * RotationSpeed, 0, 0);
-        transform.rotation = rotation;
+        Vector3 rotation = new Vector3(pitchSpeed, 0, 0);
+        transform.localRotation *= Quaternion.Euler(rotation * Time.deltaTime);
     }
+
 }
