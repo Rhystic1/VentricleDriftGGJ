@@ -266,33 +266,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-2379569299262939102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/virus_destroyed
-  m_EditorClassIdentifier: 
-  Path: event:/virus_destroyed
-  Guid:
-    Data1: 1773820040
-    Data2: 1155006442
-    Data3: -1252219714
-    Data4: 948559425
-  Banks:
-  - {fileID: -2189825881410974521}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-2189825881410974521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,10 +281,10 @@ MonoBehaviour:
   Path: Assets/FMod/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638123199642902719
+  lastModified: 638123351436950417
   FileSizes:
   - Name: Desktop
-    Value: 4245440
+    Value: 4247104
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -338,19 +311,20 @@ MonoBehaviour:
   - {fileID: 7307184807335378183}
   - {fileID: 3523793390885462976}
   - {fileID: -6138204402490936255}
-  - {fileID: -2379569299262939102}
   - {fileID: -2451958255098838569}
   - {fileID: -4286447487151451974}
   - {fileID: 741133983633482690}
   - {fileID: 6755033488434645146}
   - {fileID: 6806147254640764648}
   - {fileID: -8701997415201965357}
+  - {fileID: 2129639955857800438}
+  - {fileID: 3323181056301165446}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2189825881410974521}
   StringsBanks:
   - {fileID: 6748812040121202799}
-  cacheTime: 638123199642922233
+  cacheTime: 638123351436973267
   cacheVersion: 131601
 --- !u!114 &288327630489750551
 MonoBehaviour:
@@ -454,6 +428,60 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &2129639955857800438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/impact_enemy
+  m_EditorClassIdentifier: 
+  Path: event:/impact_enemy
+  Guid:
+    Data1: -366860055
+    Data2: 1101243799
+    Data3: 369291148
+    Data4: -132951438
+  Banks:
+  - {fileID: -2189825881410974521}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1450
+--- !u!114 &3323181056301165446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/virus_destroyed
+  m_EditorClassIdentifier: 
+  Path: event:/virus_destroyed
+  Guid:
+    Data1: 891132959
+    Data2: 1311966644
+    Data3: -1058683765
+    Data4: -730160481
+  Banks:
+  - {fileID: -2189825881410974521}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2905
 --- !u!114 &3523793390885462976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,10 +578,10 @@ MonoBehaviour:
   Path: Assets/FMod/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638123199642922233
+  lastModified: 638123351436973267
   FileSizes:
   - Name: Desktop
-    Value: 1698
+    Value: 1734
   Exists: 1
 --- !u!114 &6755033488434645146
 MonoBehaviour:

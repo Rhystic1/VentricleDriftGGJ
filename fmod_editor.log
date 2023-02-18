@@ -6,13 +6,851 @@
 [LOG] OutputCoreAudio::init                    : Maximum hardware read size: 1024 samples, Software buffer size: 512 samples, Number of software buffers: 4.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x29c732008 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x31c079c08 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31b46fcb8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31b46fcb8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31b46fcb8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30b7c6288, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30b7c6288
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30b7c6288
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30b7c6288, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30b7c6288
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30b7c6288
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30b7c6288, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30b7c6288
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30b7c6288
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30b7c6288, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31b46fcb8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30b7c6288
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30b7c6288
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31b46fcb8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31b46fcb8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31b46fcb8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31b46fcb8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31b46fcb8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31b46fcb8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31b46fcb8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31b46fcb8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30b7c6288, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30b7c6288
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30b7c6288
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30b7c6288, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30b7c6288
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30b7c6288
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30b7c6288, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30b7c6288
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30b7c6288
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319efb9f8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319efb9f8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x319efa050
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_Engine_Strafe', format=5, channels=2, frequency=48000, lengthbytes=73024, lengthpcm=578816, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707123.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319efb9f8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31b46fcb8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31b46fcb8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31b46fcb8
+[LOG] SoundI::release                          : VD_Engine_Strafe (0x31cdce318)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x30b7c60f8)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x30b7c6288)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31cc24be8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31cc24be8
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f07a88, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f07a88
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x31b657730
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_RadarBeep', format=5, channels=2, frequency=48000, lengthbytes=116544, lengthpcm=487552, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.280853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f07a88
+[LOG] SoundI::release                          : VD_RadarBeep (0x31cd3a338)
+[LOG] SoundI::release                          :     VD_RadarBeep (0x30b71fed8)
+[LOG] SoundI::release                          :     VD_RadarBeep (0x30b720068)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31cc24be8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31cc24be8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31b46fcb8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31b46fcb8
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 0x31cc24be8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31b46fcb8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31cc24be8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31cc24be8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31cc24be8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31cc24be8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31cc24be8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31cc24be8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31cc24be8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31cc24be8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31cc24be8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31cc24be8
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31cda2db8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31cda2db8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x31cde3a80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_Engine_Strafe', format=5, channels=2, frequency=48000, lengthbytes=73024, lengthpcm=578816, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707123.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31cda2db8
+[LOG] SoundI::release                          : VD_Engine_Strafe (0x319efb9f8)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x31ccd5a58)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x31cc24be8)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319efa798, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319efa798
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319efa798
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319efa798, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319efa798
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319efa798
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319efa798, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319efa798
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319efa798
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319efa798, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319efa798
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319efa798
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319efa798, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319efa798
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319efa798
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30ad61558, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30ad61558
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x31ccb86c0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_RadarBeep', format=5, channels=2, frequency=48000, lengthbytes=116544, lengthpcm=487552, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.280853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30ad61558
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319efa798, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319efa798
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319efa798
+[LOG] SoundI::release                          : VD_RadarBeep (0x319f07a88)
+[LOG] SoundI::release                          :     VD_RadarBeep (0x2f45e5c18)
+[LOG] SoundI::release                          :     VD_RadarBeep (0x30b7a8628)
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f07a88, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f4b258, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f07a88
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x31b657730
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_Engine_Speedy', format=5, channels=2, frequency=48000, lengthbytes=105056, lengthpcm=551477, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.436523.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f07a88
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f4b258
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x319f4b520
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_Engine_Constant', format=5, channels=2, frequency=48000, lengthbytes=274848, lengthpcm=999364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.283569.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f4b258
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319efa798, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319efa798
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 0x32473d048, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319efa798
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x32473d048
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x32473d048
+[LOG] SoundI::release                          : VD_Engine_Constant (0x30b7dbee8)
+[LOG] SoundI::release                          :     VD_Engine_Constant (0x31b46e628)
+[LOG] SoundI::release                          :     VD_Engine_Constant (0x31b46e7b8)
+[LOG] SoundI::release                          : VD_Engine_Speedy (0x30b78e178)
+[LOG] SoundI::release                          :     VD_Engine_Speedy (0x31b46ed08)
+[LOG] SoundI::release                          :     VD_Engine_Speedy (0x31b46fcb8)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319efa798, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319efa798
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319efa798
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319efa798, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319efa798
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x32473d048, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319efa798
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x32473d048
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x32473d048
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f47538, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f47538
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x319f4a370
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_Engine_Strafe', format=5, channels=2, frequency=48000, lengthbytes=73024, lengthpcm=578816, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707123.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f47538
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319efa798, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x1516dab38, queue head = 0x31cdb0ad8, queue count = 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319efa798
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319efa798
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x1516dab38
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x1516dab38
+[LOG] SoundI::release                          : VD_Engine_Strafe (0x31cda2db8)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x319e727a8)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x319efa798)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x1516dab38, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x1516dab38
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x1516dab38
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x1516dab38, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x1516dab38
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x1516dab38
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x32473d048, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x32473d048
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x32473d048
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31b46fcb8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31b46fcb8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x31b474cd0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_RadarBeep', format=5, channels=2, frequency=48000, lengthbytes=116544, lengthpcm=487552, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.280853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31b46fcb8
+[LOG] SoundI::release                          : VD_RadarBeep (0x30ad61558)
+[LOG] SoundI::release                          :     VD_RadarBeep (0x3098d77b8)
+[LOG] SoundI::release                          :     VD_RadarBeep (0x30b02b268)
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30feec0c8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30feec0c8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x30b7956d0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_Engine_Strafe', format=5, channels=2, frequency=48000, lengthbytes=73024, lengthpcm=578816, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707123.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30feec0c8
+[LOG] SoundI::release                          : VD_Engine_Strafe (0x319f47538)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x2f4594cf8)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x1516dab38)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x32473d048, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x32473d048
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x32473d048
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319ebb2d8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319ebb2d8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x319efc1c0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_RadarBeep', format=5, channels=2, frequency=48000, lengthbytes=116544, lengthpcm=487552, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.280853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319ebb2d8
+[LOG] SoundI::release                          : VD_RadarBeep (0x31b46fcb8)
+[LOG] SoundI::release                          :     VD_RadarBeep (0x30acb4b08)
+[LOG] SoundI::release                          :     VD_RadarBeep (0x30ac8a218)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x32473d048, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x32473d048
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x32473d048
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31b470a28, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f47538, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31b470a28
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x31b474cb0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_Engine_Speedy', format=5, channels=2, frequency=48000, lengthbytes=105056, lengthpcm=551477, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.436523.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31b470a28
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f47538
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x31b46fde0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_Engine_Constant', format=5, channels=2, frequency=48000, lengthbytes=274848, lengthpcm=999364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.283569.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f47538
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319e72c58, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319e72c58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319e72c58
+[LOG] SoundI::release                          : VD_Engine_Constant (0x319f4b258)
+[LOG] SoundI::release                          :     VD_Engine_Constant (0x319e72028)
+[LOG] SoundI::release                          :     VD_Engine_Constant (0x319e721b8)
+[LOG] SoundI::release                          : VD_Engine_Speedy (0x319f07a88)
+[LOG] SoundI::release                          :     VD_Engine_Speedy (0x319ef8ca8)
+[LOG] SoundI::release                          :     VD_Engine_Speedy (0x32473d048)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319e72c58, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319e72c58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319e72c58
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319e72c58, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319e72c58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319e72c58
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f07a88, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f07a88
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x31b657730
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_Engine_Strafe', format=5, channels=2, frequency=48000, lengthbytes=73024, lengthpcm=578816, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707123.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f07a88
+[LOG] SoundI::release                          : VD_Engine_Strafe (0x30feec0c8)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x319e727a8)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x319e72c58)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f069f8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f069f8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31e05f038, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31e05f038
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31e05f038
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31e05f038, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31e05f038
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31e05f038
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f069f8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f069f8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f069f8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f069f8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31e05f038, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31e05f038
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31e05f038
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f069f8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f069f8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f069f8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f069f8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f069f8
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319e727a8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319e727a8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x31cde3a80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_RadarBeep', format=5, channels=2, frequency=48000, lengthbytes=116544, lengthpcm=487552, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.280853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319e727a8
+[LOG] SoundI::release                          : VD_RadarBeep (0x319ebb2d8)
+[LOG] SoundI::release                          :     VD_RadarBeep (0x30ff81998)
+[LOG] SoundI::release                          :     VD_RadarBeep (0x2f538ec08)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f069f8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f069f8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f069f8
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x32473d048, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x32473d048
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f069f8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x31cde8630
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_Engine_Strafe', format=5, channels=2, frequency=48000, lengthbytes=73024, lengthpcm=578816, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707123.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x32473d048
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f069f8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f069f8
+[LOG] SoundI::release                          : VD_Engine_Strafe (0x319f07a88)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x319f47ea8)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x319f069f8)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31e05f038, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31e05f038
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31e05f038
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31e05f038, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31e05f038
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31e05f038
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f4c228, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f4c228
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f4c228
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f4c228, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f4c228
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f4c228
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f4c228, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f4c228
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f4c228
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f4c228, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31e05f038, queue head = 0x31cdb0ad8, queue count = 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f4c228
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f4c228
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31e05f038
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31e05f038
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f4c228, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f4c228
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f4c228
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f4c228, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f4c228
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f4c228
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319ef7fd8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319ef7fd8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x319e72fc0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 0x319f4c228, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_RadarBeep', format=5, channels=2, frequency=48000, lengthbytes=116544, lengthpcm=487552, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.280853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319ef7fd8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f4c228
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f4c228
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319ebb528, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319ebb528
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x319ef9130
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_Engine_Strafe', format=5, channels=2, frequency=48000, lengthbytes=73024, lengthpcm=578816, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707123.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319ebb528
+[LOG] SoundI::release                          : VD_Engine_Strafe (0x32473d048)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x319f4c098)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x319f4c228)
+[LOG] SoundI::release                          : VD_RadarBeep (0x319e727a8)
+[LOG] SoundI::release                          :     VD_RadarBeep (0x319f4a948)
+[LOG] SoundI::release                          :     VD_RadarBeep (0x319f4ac98)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30b02b268, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30b02b268
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30b02b268
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30b02b268, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30b02b268
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30b02b268
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31b41cdc8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f4a5c8, queue head = 0x31cdb0ad8, queue count = 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31b41cdc8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x31b46e3d0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_Engine_Speedy', format=5, channels=2, frequency=48000, lengthbytes=105056, lengthpcm=551477, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.436523.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31b41cdc8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f4a5c8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x31b46e6a0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_Engine_Constant', format=5, channels=2, frequency=48000, lengthbytes=274848, lengthpcm=999364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.283569.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f4a5c8
+[LOG] SoundI::release                          : VD_Engine_Constant (0x319f47538)
+[LOG] SoundI::release                          :     VD_Engine_Constant (0x2f5369558)
+[LOG] SoundI::release                          :     VD_Engine_Constant (0x2f53ca698)
+[LOG] SoundI::release                          : VD_Engine_Speedy (0x31b470a28)
+[LOG] SoundI::release                          :     VD_Engine_Speedy (0x31e013f28)
+[LOG] SoundI::release                          :     VD_Engine_Speedy (0x31e05f038)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30b02b268, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30b02b268
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30b02b268
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30b02b268, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30b02b268
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30b02b268
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30b02b268, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30b02b268
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30b02b268
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30ac8a218, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30ac8a218
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30ac8a218
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30b02b268, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30b02b268
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30b02b268
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30b02b268, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30b02b268
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30b02b268
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319ef95f8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319ef95f8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x319ef9920
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_Engine_Strafe', format=5, channels=2, frequency=48000, lengthbytes=73024, lengthpcm=578816, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707123.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319ef95f8
+[LOG] SoundI::release                          : VD_Engine_Strafe (0x319ebb528)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x3098d77b8)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x30b02b268)
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31b470a28, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31b470a28
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x31b46e810
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_RadarBeep', format=5, channels=2, frequency=48000, lengthbytes=116544, lengthpcm=487552, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.280853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31b470a28
+[LOG] SoundI::release                          : VD_RadarBeep (0x319ef7fd8)
+[LOG] SoundI::release                          :     VD_RadarBeep (0x2f45b4a98)
+[LOG] SoundI::release                          :     VD_RadarBeep (0x31cc27b08)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x1514f04c8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30ac8a218, queue head = 0x31cdb0ad8, queue count = 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x1514f04c8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x1514f04c8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30ac8a218
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30ac8a218
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x1514f04c8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x1514f04c8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x1514f04c8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x1514f04c8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x1514f04c8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x1514f04c8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x1514f04c8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x1514f04c8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30ac8a218, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x1514f04c8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30ac8a218
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30ac8a218
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30ac42448, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30ac42448
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30ac42448
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30ac8a218, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30ac8a218
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30ac8a218
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x1514f04c8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x1514f04c8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x1514f04c8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30ac8a218, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30ac8a218
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30ac8a218
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f069f8, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f069f8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x31b657730
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_Engine_Strafe', format=5, channels=2, frequency=48000, lengthbytes=73024, lengthpcm=578816, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707123.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f069f8
+[LOG] SoundI::release                          : VD_Engine_Strafe (0x319ef95f8)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x2f4a18568)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x1514f04c8)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x2f45e5c18, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x2f45e5c18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x2f45e5c18
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30ac8a218, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30ac8a218
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 0x2f45e5c18, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30ac8a218
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x2f45e5c18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x2f45e5c18
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x2f45e5c18, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x2f45e5c18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x2f45e5c18
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f4b198, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f4b198
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x319f4b460
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_RadarBeep', format=5, channels=2, frequency=48000, lengthbytes=116544, lengthpcm=487552, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.280853.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f4b198
+[LOG] SoundI::release                          : VD_RadarBeep (0x31b470a28)
+[LOG] SoundI::release                          :     VD_RadarBeep (0x319e727a8)
+[LOG] SoundI::release                          :     VD_RadarBeep (0x319e72c58)
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31cca4458, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x31cc22948, queue head = 0x31cdb0ad8, queue count = 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31cca4458
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x2f54a7cc0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_Engine_Speedy', format=5, channels=2, frequency=48000, lengthbytes=105056, lengthpcm=551477, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.436523.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31cca4458
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x31cc22948
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x31cc22c10
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_Engine_Constant', format=5, channels=2, frequency=48000, lengthbytes=274848, lengthpcm=999364, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.283569.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x31cc22948
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x30ac8a218, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x30ac8a218
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x30ac8a218
+[LOG] SoundI::release                          : VD_Engine_Speedy (0x31b41cdc8)
+[LOG] SoundI::release                          :     VD_Engine_Speedy (0x30acb4b08)
+[LOG] SoundI::release                          :     VD_Engine_Speedy (0x30ac8a218)
+[LOG] SoundI::release                          : VD_Engine_Constant (0x319f4a5c8)
+[LOG] SoundI::release                          :     VD_Engine_Constant (0x30b3d21b8)
+[LOG] SoundI::release                          :     VD_Engine_Constant (0x30ac42448)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319efcd98, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319efcd98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319efcd98
+[LOG] SystemI::createSound                     : filename = Assets/FMod/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319f47538, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319f47538
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4212416
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 34688
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x31b470b50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='VD_Engine_Strafe', format=5, channels=2, frequency=48000, lengthbytes=73024, lengthpcm=578816, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707123.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319f47538
+[LOG] SoundI::release                          : VD_Engine_Strafe (0x319f069f8)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x30ad61558)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x2f45e5c18)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319efcd98, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319efcd98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319efcd98
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319efcd98, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319efcd98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319efcd98
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319efcd98, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319efcd98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319efcd98
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x319efcd98, queue head = 0x31cdb0ad8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x319efcd98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x319efcd98
+[LOG] SoundI::release                          : VD_Engine_Constant (0x31cc22948)
+[LOG] SoundI::release                          :     VD_Engine_Constant (0x31b504fc8)
+[LOG] SoundI::release                          :     VD_Engine_Constant (0x31b505158)
+[LOG] SoundI::release                          : VD_Engine_Speedy (0x31cca4458)
+[LOG] SoundI::release                          :     VD_Engine_Speedy (0x319efcc08)
+[LOG] SoundI::release                          :     VD_Engine_Speedy (0x319efcd98)
+[LOG] SoundI::release                          : VD_Heartbeat_60BPM (0x31cdfcf88)
+[LOG] SoundI::release                          :     VD_Heartbeat_60BPM (0x30b7a82f8)
+[LOG] SoundI::release                          :     VD_Heartbeat_60BPM (0x30b7a8488)
+[LOG] SoundI::release                          : VD_GameMusic2 (0x31cdfbe38)
+[LOG] SoundI::release                          :     VD_GameMusic2 (0x30b786528)
+[LOG] SoundI::release                          :     VD_GameMusic2 (0x30b7866b8)
+[LOG] SoundI::release                          : VD_Engine_Strafe (0x319f47538)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x319f4a5c8)
+[LOG] SoundI::release                          :     VD_Engine_Strafe (0x319f4a758)
+[LOG] SoundI::release                          : VD_RadarBeep (0x319f4b198)
+[LOG] SoundI::release                          :     VD_RadarBeep (0x1516dab38)
+[LOG] SoundI::release                          :     VD_RadarBeep (0x2f5495228)
+[LOG] SoundI::release                          :  (0x31b47a968)
+[LOG] SoundI::release                          :     VD_TurnLoop (0x31b47aad8)
+[LOG] SoundI::release                          :  (0x31b47a7e8)
+[LOG] SoundI::release                          :     VD_Boost1 (0x31b478ba8)
+[LOG] SoundI::release                          :  (0x31b4781e8)
+[LOG] SoundI::release                          :     VD_Boost2 (0x31b478358)
+[LOG] SoundI::release                          :  (0x31b47e088)
+[LOG] SoundI::release                          :     VD_Boost3 (0x31b47e1f8)
+[LOG] SoundI::release                          :  (0x31b4797e8)
+[LOG] SoundI::release                          :     VD_Engine_WhooshByLeft1 (0x31b477ec8)
+[LOG] SoundI::release                          :  (0x31b478678)
+[LOG] SoundI::release                          :     VD_Engine_WhooshByLeft2 (0x31b4787e8)
+[LOG] SoundI::release                          :  (0x31b4759a8)
+[LOG] SoundI::release                          :     VD_Engine_WhooshByLeft3 (0x31b475b18)
+[LOG] SoundI::release                          :  (0x31b47a4e8)
+[LOG] SoundI::release                          :     VD_Engine_WhooshByRight1 (0x31b47a658)
+[LOG] SoundI::release                          :  (0x31b47d2d8)
+[LOG] SoundI::release                          :     VD_Engine_WhooshByRight2 (0x31b47d448)
+[LOG] SoundI::release                          :  (0x31b476d88)
+[LOG] SoundI::release                          :     VD_Engine_WhooshByRight3 (0x31b476ef8)
+[LOG] SoundI::release                          :  (0x31b47a058)
+[LOG] SoundI::release                          :     VD_Impact_Wall1-V3 (0x31b47a1c8)
+[LOG] SoundI::release                          :  (0x31b477748)
+[LOG] SoundI::release                          :     VD_Impact_Wall2-V3 (0x31b4778b8)
+[LOG] SoundI::release                          :  (0x31b47e518)
+[LOG] SoundI::release                          :     VD_Impact_Wall3-V3 (0x31b47b4b8)
+[LOG] SoundI::release                          :  (0x31b479358)
+[LOG] SoundI::release                          :     VD_Impact_PlayerVO_Wall1 (0x31b4794c8)
+[LOG] SoundI::release                          :  (0x31b478ec8)
+[LOG] SoundI::release                          :     VD_Impact_PlayerVO_Wall2 (0x31b479038)
+[LOG] SoundI::release                          :  (0x31b47d768)
+[LOG] SoundI::release                          :     VD_Impact_PlayerVO_Wall3 (0x31b47d8d8)
+[LOG] SoundI::release                          :  (0x31b47adf8)
+[LOG] SoundI::release                          :     VD_Impact_PlayerVO_Wall4 (0x31b47af68)
+[LOG] SoundI::release                          :  (0x31b47dbf8)
+[LOG] SoundI::release                          :     VD_Impact_PlayerVO_Wall5 (0x31b47dd68)
+[LOG] SoundI::release                          :  (0x31b47b288)
+[LOG] SoundI::release                          :     VD_Virus_Destroyed (0x31b479d38)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
@@ -20,3 +858,5 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.

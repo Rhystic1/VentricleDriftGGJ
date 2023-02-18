@@ -12,6 +12,7 @@ public class AudioDirector : MonoBehaviour
     private FMOD.Studio.EventInstance RadarSound;
     private FMOD.Studio.EventInstance TurningSound;
     private FMOD.Studio.EventInstance ImpactWallSound;
+    private FMOD.Studio.EventInstance ImpactEnemySound;
     private FMOD.Studio.EventInstance BoostSound;
     private FMOD.Studio.EventInstance VirusDestroyedSound;
     public FMODUnity.EventReference EngineSpeedEvent;
@@ -20,6 +21,7 @@ public class AudioDirector : MonoBehaviour
     public FMODUnity.EventReference RadarEvent;
     public FMODUnity.EventReference TurningEvent;
     public FMODUnity.EventReference ImpactWallEvent;
+    public FMODUnity.EventReference ImpactEnemyEvent;
     public FMODUnity.EventReference BoostEvent;
     public FMODUnity.EventReference VirusDestroyedEvent;
 
@@ -59,6 +61,7 @@ public class AudioDirector : MonoBehaviour
         RadarSound = FMODUnity.RuntimeManager.CreateInstance(RadarEvent);
         TurningSound = FMODUnity.RuntimeManager.CreateInstance(TurningEvent);
         ImpactWallSound = FMODUnity.RuntimeManager.CreateInstance(ImpactWallEvent);
+        ImpactEnemySound = FMODUnity.RuntimeManager.CreateInstance(ImpactEnemyEvent);
         BoostSound = FMODUnity.RuntimeManager.CreateInstance(BoostEvent);
         VirusDestroyedSound = FMODUnity.RuntimeManager.CreateInstance(VirusDestroyedEvent);
         EngineSpeedSound.start();
@@ -68,7 +71,7 @@ public class AudioDirector : MonoBehaviour
         TurningSound.start();
 
         ChangeBPMSpeed(0.5f);
-        ChangeMusicLevel(0f);
+        ChangeMusicLevel(1f);
     }
 
     void Update()
@@ -113,6 +116,10 @@ public class AudioDirector : MonoBehaviour
     {
         ImpactWallSound.start();
     }
+    public void ImpactEnemy()
+    {
+        ImpactEnemySound.start();
+    }    
     public void Boost()
     {
         BoostSound.start();

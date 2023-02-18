@@ -72,10 +72,12 @@ public class PlayerMovement : MonoBehaviour
                     this.MoveDown();
                 }
             }
-            else audioDirectorScript.ChangeStrafeSpeed(0f);
-            { }
+            else
+            {
+                audioDirectorScript.ChangeStrafeSpeed(0f);
+            }
 
-            // same for the pitch to incorperate the TurnSpeed perameter
+            //   for the pitch to incorperate the TurnSpeed perameter
 
             if (input.actions["PitchLeft"].IsInProgress() ||
             input.actions["PitchRight"].IsInProgress() ||
@@ -111,6 +113,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 forward = transform.forward;
         float forwardVelocity = (Vector3.Dot(velocity, forward) / speed) / 2;
         audioDirectorScript.ChangeEngineSpeed(forwardVelocity);
+
     }
 
     void MoveForward()

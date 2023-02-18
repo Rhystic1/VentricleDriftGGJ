@@ -184,7 +184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
@@ -361,6 +361,14 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.028608937
       objectReference: {fileID: 0}
+    - target: {fileID: 3173087458913276854, guid: fcdeddc3725a27748b591a7674dd02e7, type: 3}
+      propertyPath: m_TagString
+      value: Virus
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547278327722624600, guid: fcdeddc3725a27748b591a7674dd02e7, type: 3}
+      propertyPath: m_TagString
+      value: Virus
+      objectReference: {fileID: 0}
     - target: {fileID: 3850441084633042705, guid: fcdeddc3725a27748b591a7674dd02e7, type: 3}
       propertyPath: m_Height
       value: 0.74706566
@@ -421,6 +429,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.0061036926
       objectReference: {fileID: 0}
+    - target: {fileID: 5312254490654997750, guid: fcdeddc3725a27748b591a7674dd02e7, type: 3}
+      propertyPath: m_TagString
+      value: Virus
+      objectReference: {fileID: 0}
     - target: {fileID: 5452963567968911320, guid: fcdeddc3725a27748b591a7674dd02e7, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -444,6 +456,10 @@ PrefabInstance:
     - target: {fileID: 5827229860777189457, guid: fcdeddc3725a27748b591a7674dd02e7, type: 3}
       propertyPath: m_Center.z
       value: 0.011298241
+      objectReference: {fileID: 0}
+    - target: {fileID: 6799358982953551792, guid: fcdeddc3725a27748b591a7674dd02e7, type: 3}
+      propertyPath: m_TagString
+      value: Virus
       objectReference: {fileID: 0}
     - target: {fileID: 6913866833784879824, guid: fcdeddc3725a27748b591a7674dd02e7, type: 3}
       propertyPath: m_RootOrder
@@ -604,6 +620,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9046958201756331296, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
+      propertyPath: m_TagString
+      value: Walls
+      objectReference: {fileID: 0}
+    - target: {fileID: -8965230302916952766, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
+      propertyPath: m_TagString
+      value: Walls
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -660,6 +684,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8508461122926741843, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
+      propertyPath: m_TagString
+      value: Walls
+      objectReference: {fileID: 0}
     - target: {fileID: -8037642070999224139, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.33
@@ -672,10 +700,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.04
       objectReference: {fileID: 0}
+    - target: {fileID: -7348555901452710524, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
+      propertyPath: m_TagString
+      value: Walls
+      objectReference: {fileID: 0}
+    - target: {fileID: -6467412096290811217, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
+      propertyPath: m_TagString
+      value: Walls
+      objectReference: {fileID: 0}
     - target: {fileID: -5733981035308023022, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 241a312b4928dcb49bfba0c2526a02f4, type: 2}
+    - target: {fileID: -5231025915140057479, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
+      propertyPath: m_TagString
+      value: Walls
+      objectReference: {fileID: 0}
     - target: {fileID: -5225864888118509289, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -684,10 +724,22 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 241a312b4928dcb49bfba0c2526a02f4, type: 2}
+    - target: {fileID: -4693956096448335144, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
+      propertyPath: m_TagString
+      value: Walls
+      objectReference: {fileID: 0}
+    - target: {fileID: -3744405848523596648, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
+      propertyPath: m_TagString
+      value: Walls
+      objectReference: {fileID: 0}
     - target: {fileID: -2733818618462414217, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 241a312b4928dcb49bfba0c2526a02f4, type: 2}
+    - target: {fileID: -1789452175967113734, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
+      propertyPath: m_TagString
+      value: Walls
+      objectReference: {fileID: 0}
     - target: {fileID: -987523847826518753, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -696,6 +748,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 241a312b4928dcb49bfba0c2526a02f4, type: 2}
+    - target: {fileID: -872835253432916608, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
+      propertyPath: m_TagString
+      value: Walls
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
       propertyPath: m_Name
       value: BloodVesselModel
@@ -704,14 +760,34 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
+      propertyPath: m_TagString
+      value: Walls
+      objectReference: {fileID: 0}
     - target: {fileID: 1221976254078804567, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 241a312b4928dcb49bfba0c2526a02f4, type: 2}
+    - target: {fileID: 1298204550078110640, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
+      propertyPath: m_TagString
+      value: Walls
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894096246850723998, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
+      propertyPath: m_TagString
+      value: Walls
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982993253496771738, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
+      propertyPath: m_TagString
+      value: Walls
+      objectReference: {fileID: 0}
     - target: {fileID: 2413864688904672789, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 241a312b4928dcb49bfba0c2526a02f4, type: 2}
+    - target: {fileID: 2677151153867563905, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
+      propertyPath: m_TagString
+      value: Walls
+      objectReference: {fileID: 0}
     - target: {fileID: 2965830585664068917, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.848
@@ -728,6 +804,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 241a312b4928dcb49bfba0c2526a02f4, type: 2}
+    - target: {fileID: 3257792644167915994, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
+      propertyPath: m_TagString
+      value: Walls
+      objectReference: {fileID: 0}
     - target: {fileID: 4741646960449800744, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -736,6 +816,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 241a312b4928dcb49bfba0c2526a02f4, type: 2}
+    - target: {fileID: 5635105288857556520, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
+      propertyPath: m_TagString
+      value: Walls
+      objectReference: {fileID: 0}
     - target: {fileID: 6269067111844243047, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -881,7 +965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
@@ -1136,7 +1220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
@@ -1456,7 +1540,7 @@ Transform:
   m_GameObject: {fileID: 754288603}
   m_LocalRotation: {x: 0.06061806, y: -0.06238505, z: -0.7144712, w: 0.69423664}
   m_LocalPosition: {x: -13.89, y: -108.61, z: 195.09}
-  m_LocalScale: {x: 2, y: 20, z: 2.4}
+  m_LocalScale: {x: 2.0000002, y: 20.000006, z: 2.3999996}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1523,7 +1607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
@@ -1669,7 +1753,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
@@ -1782,7 +1866,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
@@ -1890,7 +1974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
@@ -1998,7 +2082,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
@@ -2265,6 +2349,13 @@ MonoBehaviour:
       Data3: -2082005371
       Data4: 293832599
     Path: event:/impact_wall
+  ImpactEnemyEvent:
+    Guid:
+      Data1: -366860055
+      Data2: 1101243799
+      Data3: 369291148
+      Data4: -132951438
+    Path: event:/impact_enemy
   BoostEvent:
     Guid:
       Data1: -804820015
@@ -2274,10 +2365,10 @@ MonoBehaviour:
     Path: event:/boost
   VirusDestroyedEvent:
     Guid:
-      Data1: 1773820040
-      Data2: 1155006442
-      Data3: -1252219714
-      Data4: 948559425
+      Data1: 891132959
+      Data2: 1311966644
+      Data3: -1058683765
+      Data4: -730160481
     Path: event:/virus_destroyed
   EngineSpeed: 0
   BPM: 0
@@ -2389,7 +2480,7 @@ Transform:
   m_GameObject: {fileID: 1034903244}
   m_LocalRotation: {x: 0.5419577, y: -0.55775374, z: -0.45085657, w: 0.43808794}
   m_LocalPosition: {x: -155.35, y: -87.58, z: -179.22}
-  m_LocalScale: {x: 2, y: 20, z: 2}
+  m_LocalScale: {x: 2.0000005, y: 20.000002, z: 2.0000005}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2614,8 +2705,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119838206}
   m_LocalRotation: {x: -0, y: -0, z: -0.71718955, w: 0.6968782}
-  m_LocalPosition: {x: 2.16, y: -108.46, z: -193.98}
-  m_LocalScale: {x: 2, y: 20, z: 2}
+  m_LocalPosition: {x: 2.1600008, y: -108.46, z: -193.98001}
+  m_LocalScale: {x: 2.0000005, y: 20.000004, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2703,7 +2794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
@@ -2946,7 +3037,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
@@ -3007,6 +3098,7 @@ GameObject:
   - component: {fileID: 1604860848}
   - component: {fileID: 1604860850}
   - component: {fileID: 1604860851}
+  - component: {fileID: 1604860852}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3082,6 +3174,7 @@ MonoBehaviour:
   rotationSpeed: 2
   pitchSpeed: 124
   gravityScale: 0
+  strafe: 0
   impulseForce: {x: 0, y: 0, z: 0}
   timer: {fileID: 0}
   input: {fileID: 1604860846}
@@ -3134,6 +3227,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 1
+--- !u!114 &1604860852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604860841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a07e62772494cdbac7b4f4aa59b16e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1626413466 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3257792644167915994, guid: bc5f3b07e88b5634a91d5af835b9db87, type: 3}
@@ -3266,7 +3371,7 @@ Transform:
   m_GameObject: {fileID: 1738253406}
   m_LocalRotation: {x: -0.48843354, y: 0.5026696, z: -0.51155084, w: 0.4970631}
   m_LocalPosition: {x: -171.84, y: -85.88, z: 170.35}
-  m_LocalScale: {x: 2, y: 20, z: 2}
+  m_LocalScale: {x: 2.0000002, y: 20.000002, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3502,7 +3607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
@@ -3610,7 +3715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 281d879a1b30ea343a4e1ed2ca50e28d, type: 3}
       propertyPath: m_TagString

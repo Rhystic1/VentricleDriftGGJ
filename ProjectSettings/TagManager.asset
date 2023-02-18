@@ -9,6 +9,8 @@ TagManager:
   - Enemy
   - EventSystem
   - AudioDirector
+  - Walls
+  - Virus
   layers:
   - Default
   - TransparentFX
