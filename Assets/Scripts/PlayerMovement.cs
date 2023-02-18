@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    AudioDirector audioDirectorScript;
+
     Vector3 movement;
 
     [SerializeField]
@@ -25,6 +27,10 @@ public class PlayerMovement : MonoBehaviour
     public GameTimer lossCondition;
     void Start()
     {
+        // links up with the AudioDirector script to access the FMOD events
+        audioDirectorScript = GameObject.FindGameObjectWithTag("EventSystem").GetComponent<AudioDirector>();
+
+
         controller = GetComponent<CharacterController>();
 
         impulseForce = new Vector3(0f, 0f, 0f);
@@ -41,42 +47,70 @@ public class PlayerMovement : MonoBehaviour
         {
             this.MoveForward();
 
-            if (input.actions["MoveUp"].IsInProgress())
+            // slight changes to the movement to incorperate the StrafeSpeed parameter
+
+            if (input.actions["MoveUp"].IsInProgress() ||
+            input.actions["MoveRight"].IsInProgress() ||
+            input.actions["MoveLeft"].IsInProgress() ||
+            input.actions["MoveDown"].IsInProgress())
             {
-                this.MoveUp();
+                audioDirectorScript.ChangeStrafeSpeed(1f);
+                if (input.actions["MoveUp"].IsInProgress())
+                {
+                    this.MoveUp();
+                }
+                if (input.actions["MoveRight"].IsInProgress())
+                {
+                    this.MoveRight();
+                }
+                if (input.actions["MoveLeft"].IsInProgress())
+                {
+                    this.MoveLeft();
+                }
+                if (input.actions["MoveDown"].IsInProgress())
+                {
+                    this.MoveDown();
+                }
             }
-            if (input.actions["MoveRight"].IsInProgress())
+            else audioDirectorScript.ChangeStrafeSpeed(0f);
+            { }
+
+            // same for the pitch to incorperate the TurnSpeed perameter
+
+            if (input.actions["PitchLeft"].IsInProgress() ||
+            input.actions["PitchRight"].IsInProgress() ||
+            input.actions["PitchUp"].IsInProgress() ||
+            input.actions["PitchDown"].IsInProgress())
             {
-                this.MoveRight();
+                audioDirectorScript.ChangeTurnSpeed(1f);
+                if (input.actions["PitchLeft"].IsInProgress())
+                {
+                    this.PitchLeft();
+                }
+                if (input.actions["PitchRight"].IsInProgress())
+                {
+                    this.PitchRight();
+                }
+                if (input.actions["PitchUp"].IsInProgress())
+                {
+                    this.PitchUp();
+                }
+                if (input.actions["PitchDown"].IsInProgress())
+                {
+                    this.PitchDown();
+                }
             }
-            if (input.actions["MoveLeft"].IsInProgress())
-            {
-                this.MoveLeft();
-            }
-            if (input.actions["MoveDown"].IsInProgress())
-            {
-                this.MoveDown();
-            }
-            if (input.actions["PitchLeft"].IsInProgress())
-            {
-                this.PitchLeft();
-            }
-            if (input.actions["PitchRight"].IsInProgress())
-            {
-                this.PitchRight();
-            }
-            if (input.actions["PitchUp"].IsInProgress())
-            {
-                this.PitchUp();
-            }
-            if (input.actions["PitchDown"].IsInProgress())
-            {
-                this.PitchDown();
-            }
+            else audioDirectorScript.ChangeTurnSpeed(0f);
 
             movement += Physics.gravity * gravityScale;
             controller.Move(movement * Time.deltaTime);
         }
+
+        //detrimines the ships current forward velocity and turns it into a variable for controlling the EngineSpeed parameter
+        Vector3 velocity = controller.velocity;
+        Vector3 forward = transform.forward;
+        float forwardVelocity = (Vector3.Dot(velocity, forward) / speed) / 2;
+        audioDirectorScript.ChangeEngineSpeed(forwardVelocity);
     }
 
     void MoveForward()
@@ -138,5 +172,6 @@ public class PlayerMovement : MonoBehaviour
         Vector3 rotation = new Vector3(pitchSpeed, 0, 0);
         transform.localRotation *= Quaternion.Euler(rotation * Time.deltaTime);
     }
+
 
 }

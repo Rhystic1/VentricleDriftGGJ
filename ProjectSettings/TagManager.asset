@@ -7,6 +7,8 @@ TagManager:
   - LoseCondition
   - EndWalls
   - Enemy
+  - EventSystem
+  - AudioDirector
   layers:
   - Default
   - TransparentFX

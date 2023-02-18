@@ -2146,7 +2146,7 @@ GameObject:
   - component: {fileID: 1009240822}
   m_Layer: 0
   m_Name: EventSystem
-  m_TagString: Untagged
+  m_TagString: EventSystem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2230,7 +2230,7 @@ MonoBehaviour:
       Data3: 172668070
       Data4: 1675608178
     Path: event:/engine_constant
-  BPMEvent:
+  MusicEvent:
     Guid:
       Data1: -227359538
       Data2: 1105795661
@@ -2251,11 +2251,40 @@ MonoBehaviour:
       Data3: -404049232
       Data4: -1984599942
     Path: event:/radar
+  TurningEvent:
+    Guid:
+      Data1: -2080071868
+      Data2: 1335424575
+      Data3: 229416590
+      Data4: 826951637
+    Path: event:/turning
+  ImpactWallEvent:
+    Guid:
+      Data1: 1542980393
+      Data2: 1319944100
+      Data3: -2082005371
+      Data4: 293832599
+    Path: event:/impact_wall
+  BoostEvent:
+    Guid:
+      Data1: -804820015
+      Data2: 1118321382
+      Data3: 619079612
+      Data4: 1940150738
+    Path: event:/boost
+  VirusDestroyedEvent:
+    Guid:
+      Data1: 1773820040
+      Data2: 1155006442
+      Data3: -1252219714
+      Data4: 948559425
+    Path: event:/virus_destroyed
   EngineSpeed: 0
   BPM: 0
   MusicLevel: 0
   Strafe: 0
   Proximity: 0
+  TurnSpeed: 0
 --- !u!114 &1009240823
 MonoBehaviour:
   m_ObjectHideFlags: 0

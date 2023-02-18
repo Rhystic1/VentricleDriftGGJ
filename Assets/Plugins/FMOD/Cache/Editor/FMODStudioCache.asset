@@ -29,6 +29,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 170000
+--- !u!114 &-8701997415201965357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/boost
+  m_EditorClassIdentifier: 
+  Path: event:/boost
+  Guid:
+    Data1: -804820015
+    Data2: 1118321382
+    Data3: 619079612
+    Data4: 1940150738
+  Banks:
+  - {fileID: -2189825881410974521}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-8663595235166547822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,7 +186,7 @@ MonoBehaviour:
   - {fileID: -5003929488958930558}
   MinDistance: 1
   MaxDistance: 20
-  Length: 12058
+  Length: 10257
 --- !u!114 &-5003929488958930558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,10 +308,10 @@ MonoBehaviour:
   Path: Assets/FMod/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638112979006514576
+  lastModified: 638123199642902719
   FileSizes:
   - Name: Desktop
-    Value: 4155616
+    Value: 4245440
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -316,12 +343,14 @@ MonoBehaviour:
   - {fileID: -4286447487151451974}
   - {fileID: 741133983633482690}
   - {fileID: 6755033488434645146}
+  - {fileID: 6806147254640764648}
+  - {fileID: -8701997415201965357}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2189825881410974521}
   StringsBanks:
   - {fileID: 6748812040121202799}
-  cacheTime: 638112979006524589
+  cacheTime: 638123199642922233
   cacheVersion: 131601
 --- !u!114 &288327630489750551
 MonoBehaviour:
@@ -505,7 +534,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1100
+  Length: 1784
 --- !u!114 &6748812040121202799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,10 +550,10 @@ MonoBehaviour:
   Path: Assets/FMod/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638112979006524589
+  lastModified: 638123199642922233
   FileSizes:
   - Name: Desktop
-    Value: 1572
+    Value: 1698
   Exists: 1
 --- !u!114 &6755033488434645146
 MonoBehaviour:
@@ -553,6 +582,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 700
+--- !u!114 &6806147254640764648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/turning
+  m_EditorClassIdentifier: 
+  Path: event:/turning
+  Guid:
+    Data1: -2080071868
+    Data2: 1335424575
+    Data3: 229416590
+    Data4: 826951637
+  Banks:
+  - {fileID: -2189825881410974521}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8247372880024317916}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2478
 --- !u!114 &7307184807335378183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,3 +637,27 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &8247372880024317916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/turning/TurnSpeed
+  m_EditorClassIdentifier: 
+  Name: TurnSpeed
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3195915009
+    data2: 3704602055
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1

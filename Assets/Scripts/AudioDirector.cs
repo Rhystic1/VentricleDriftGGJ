@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class AudioDirector : MonoBehaviour
 {
+
     public static AudioDirector Instance;
     private FMOD.Studio.EventInstance EngineSpeedSound;
-    private FMOD.Studio.EventInstance BPMSound;
+    private FMOD.Studio.EventInstance MusicSound;
     private FMOD.Studio.EventInstance StrafeSound;
     private FMOD.Studio.EventInstance RadarSound;
+    private FMOD.Studio.EventInstance TurningSound;
+    private FMOD.Studio.EventInstance ImpactWallSound;
+    private FMOD.Studio.EventInstance BoostSound;
+    private FMOD.Studio.EventInstance VirusDestroyedSound;
     public FMODUnity.EventReference EngineSpeedEvent;
-    public FMODUnity.EventReference BPMEvent;
+    public FMODUnity.EventReference MusicEvent;
     public FMODUnity.EventReference StrafeEvent;
     public FMODUnity.EventReference RadarEvent;
+    public FMODUnity.EventReference TurningEvent;
+    public FMODUnity.EventReference ImpactWallEvent;
+    public FMODUnity.EventReference BoostEvent;
+    public FMODUnity.EventReference VirusDestroyedEvent;
 
 
 
@@ -31,6 +40,9 @@ public class AudioDirector : MonoBehaviour
     [SerializeField]
     [Range(0f, 1f)]
     private float Proximity;
+    [SerializeField]
+    [Range(0f, 1f)]
+    private float TurnSpeed;
 
     private void Awake()
     {
@@ -42,22 +54,32 @@ public class AudioDirector : MonoBehaviour
     void Start()
     {
         EngineSpeedSound = FMODUnity.RuntimeManager.CreateInstance(EngineSpeedEvent);
-        BPMSound = FMODUnity.RuntimeManager.CreateInstance(BPMEvent);
+        MusicSound = FMODUnity.RuntimeManager.CreateInstance(MusicEvent);
         StrafeSound = FMODUnity.RuntimeManager.CreateInstance(StrafeEvent);
         RadarSound = FMODUnity.RuntimeManager.CreateInstance(RadarEvent);
+        TurningSound = FMODUnity.RuntimeManager.CreateInstance(TurningEvent);
+        ImpactWallSound = FMODUnity.RuntimeManager.CreateInstance(ImpactWallEvent);
+        BoostSound = FMODUnity.RuntimeManager.CreateInstance(BoostEvent);
+        VirusDestroyedSound = FMODUnity.RuntimeManager.CreateInstance(VirusDestroyedEvent);
         EngineSpeedSound.start();
-        BPMSound.start();
+        MusicSound.start();
         StrafeSound.start();
         RadarSound.start();
+        TurningSound.start();
+
+        ChangeBPMSpeed(0.5f);
+        ChangeMusicLevel(0f);
     }
 
     void Update()
     {
         EngineSpeedSound.setParameterByName("EngineSpeed", EngineSpeed);
-        BPMSound.setParameterByName("BPM", BPM);
-        BPMSound.setParameterByName("MusicLevel", MusicLevel);
+        MusicSound.setParameterByName("BPM", BPM);
+        MusicSound.setParameterByName("MusicLevel", MusicLevel);
         StrafeSound.setParameterByName("Strafe", Strafe);
         RadarSound.setParameterByName("Proximity", Proximity);
+        TurningSound.setParameterByName("TurnSpeed", TurnSpeed);
+
     }
 
     public void ChangeEngineSpeed(float speed)
@@ -82,5 +104,21 @@ public class AudioDirector : MonoBehaviour
     public void ChangeRadarSpeed(float speed)
     {
         Proximity = Mathf.Clamp(speed, 0f, 1f);
+    }
+    public void ChangeTurnSpeed(float speed)
+    {
+        TurnSpeed = Mathf.Clamp(speed, 0f, 1f);
+    }
+    public void ImpactWall()
+    {
+        ImpactWallSound.start();
+    }
+    public void Boost()
+    {
+        BoostSound.start();
+    }
+    public void VirusDestroyed()
+    {
+        VirusDestroyedSound.start();
     }
 }
